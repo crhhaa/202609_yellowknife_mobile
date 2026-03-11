@@ -345,6 +345,47 @@
         </div>
       </div>
 
+
+      <div class="section-title">🌿 幽鶴國家公園（Yoho）</div>
+
+      <div class="location-card" onclick="flyTo('emerald')">
+        <div class="loc-header">
+          <div class="loc-dot" style="background:#00897b"></div>
+          <span class="loc-name">翡翠湖</span>
+          <span class="loc-name-en">Emerald Lake</span>
+        </div>
+        <div class="loc-desc">
+          <p>✨ 幽鶴最美湖泊，翠綠湖水，百年木屋旅館，比路易斯湖更清幽</p>
+          <p>距坎莫爾 <span class="drive-tag">🚗 ~2 小時</span>
+          距路易斯湖 <span class="drive-tag">🚗 30 分鐘</span></p>
+        </div>
+      </div>
+
+      <div class="location-card" onclick="flyTo('natural')">
+        <div class="loc-header">
+          <div class="loc-dot" style="background:#00897b"></div>
+          <span class="loc-name">天然橋</span>
+          <span class="loc-name-en">Natural Bridge</span>
+        </div>
+        <div class="loc-desc">
+          <p>✨ 河水沖蝕形成的天然石橋，步行 5 分鐘，免費，去翡翠湖必經</p>
+          <p>距路易斯湖 <span class="drive-tag">🚗 20 分鐘</span></p>
+        </div>
+      </div>
+
+      <div class="location-card" onclick="flyTo('takakkaw')">
+        <div class="loc-header">
+          <div class="loc-dot" style="background:#00897b"></div>
+          <span class="loc-name">塔卡考瀑布</span>
+          <span class="loc-name-en">Takakkaw Falls</span>
+        </div>
+        <div class="loc-desc">
+          <p>✨ 加拿大最高瀑布之一，高 373m，轟隆震撼，⚠️ 季節性道路（約 6-10 月）</p>
+          <p>距坎莫爾 <span class="drive-tag">🚗 ~2 小時</span>
+          距路易斯湖 <span class="drive-tag">🚗 25 分鐘</span></p>
+        </div>
+      </div>
+
       <div class="section-title">冰原大道沿線</div>
 
       <div class="location-card" onclick="flyTo('icefields')">
@@ -450,6 +491,8 @@
           <tr><td>明尼萬卡湖</td><td>~30 min</td><td>~35 km</td></tr>
           <tr><td>路易斯湖</td><td>~1.5 hr</td><td>~95 km</td></tr>
           <tr><td>夢蓮湖</td><td>~1.5 hr</td><td>~103 km</td></tr>
+          <tr><td>翡翠湖（幽鶴）</td><td>~2 hr</td><td>~128 km</td></tr>
+          <tr><td>塔卡考瀑布（幽鶴）</td><td>~2 hr</td><td>~130 km</td></tr>
           <tr><td>弓湖</td><td>~2 hr</td><td>~130 km</td></tr>
           <tr><td>沛托湖</td><td>~2.5 hr</td><td>~145 km</td></tr>
           <tr><td>森瓦普塔瀑布</td><td>~3.5 hr</td><td>~245 km</td></tr>
@@ -501,7 +544,10 @@ const locations = {
   athabasca:  { lat: 52.1900, lng: -117.2300, name: "阿薩巴斯卡冰河", en: "Athabasca Glacier", color: "#d35400", tip: "哥倫比亞冰原，可搭冰原雪車踏上冰面。距坎莫爾 3.5hr。" },
   skywalk:    { lat: 52.2175, lng: -117.2736, name: "冰河天空步道", en: "Glacier Skywalk", color: "#c0392b", tip: "懸崖玻璃地板，俯瞰 280m 深峽谷，需購票。距坎莫爾 3.5hr。" },
   jasper:     { lat: 52.8737, lng: -118.0814, name: "賈斯珀小鎮", en: "Jasper Town", color: "#7f8c8d", tip: "暗天保護區，觀星極佳。馬林湖、天使冰河等周邊景點豐富。距坎莫爾 4.5hr。" },
-  icefields:  { lat: 51.9,    lng: -116.85,   name: "冰原大道（中段）", en: "Icefields Parkway", color: "#f39c12", tip: "Hwy 93N，全長 230km，路易斯湖 → 賈斯珀，世界最美公路之一。" }
+  yoho:       { lat: 51.3947, lng: -116.4921, name: "幽鶴國家公園入口", en: "Yoho National Park / Field BC", color: "#00897b", tip: "緊鄰班夫國家公園西側，以壯麗瀑布和翡翠湖著稱。距坎莫爾 ~1.5hr。" },
+  emerald:    { lat: 51.4436, lng: -116.5319, name: "翡翠湖", en: "Emerald Lake", color: "#00897b", tip: "幽鶴最美湖泊，翠綠湖水倒映山峰，湖畔有百年木屋旅館，比路易斯湖清幽。距坎莫爾 ~2hr。" },
+  natural:    { lat: 51.4003, lng: -116.4758, name: "天然橋", en: "Natural Bridge", color: "#00897b", tip: "弓河沖蝕岩石形成的天然石橋，步行 5 分鐘，免費，順道必訪。距翡翠湖 ~10 分鐘。" },
+  takakkaw:   { lat: 51.4996, lng: -116.4776, name: "塔卡考瀑布", en: "Takakkaw Falls", color: "#00897b", tip: "加拿大最高瀑布之一，高達 373m，震撼壯觀。季節性道路，約 6-10 月開放。距坎莫爾 ~2hr。" },  icefields:  { lat: 51.9,    lng: -116.85,   name: "冰原大道（中段）", en: "Icefields Parkway", color: "#f39c12", tip: "Hwy 93N，全長 230km，路易斯湖 → 賈斯珀，世界最美公路之一。" }
 };
 
 const map = L.map('map', { zoomControl: true }).setView([51.8, -115.8], 7);
@@ -525,6 +571,22 @@ L.polyline([
 L.polyline([
   [51.4160,-116.2187],[51.37,-116.22],[51.3217,-116.186]
 ], { color:'#8e44ad', weight:3, opacity:0.7 }).addTo(map);
+
+
+// Hwy 1 extension westward through Yoho (Lake Louise → Field → Golden)
+L.polyline([
+  [51.4160,-116.2187],[51.3947,-116.4921],[51.30,-116.97]
+], { color:'#3498db', weight:3, opacity:0.6, dashArray:'8,4' }).addTo(map);
+
+// Yoho Valley Road (to Takakkaw Falls)
+L.polyline([
+  [51.3947,-116.4921],[51.45,-116.48],[51.4996,-116.4776]
+], { color:'#00897b', weight:2.5, opacity:0.7, dashArray:'6,4' }).addTo(map);
+
+// Emerald Lake Road
+L.polyline([
+  [51.4003,-116.4758],[51.4200,-116.5050],[51.4436,-116.5319]
+], { color:'#00897b', weight:2.5, opacity:0.7, dashArray:'6,4' }).addTo(map);
 
 // Markers
 const markers = {};
